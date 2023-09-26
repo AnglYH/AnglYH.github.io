@@ -1,14 +1,15 @@
 const infoBtn = document.querySelector(".info-btn");
+const caja = document.querySelector(".caja");
+const clickSound = document.getElementById("clickSound");
 
 infoBtn.addEventListener("click", function() {
-  const lista = document.querySelector(".list");
-  const elementos = lista.getElementsByTagName("li");
-  let texto = "";
-
-  for (let i = 0; i < elementos.length; i++) {
-    const valor = elementos[i].textContent; 
-    texto += valor + "\n"; 
+  clickSound.currentTime = 0;
+  clickSound.play();
+  
+  if (caja.style.display === "none" || caja.style.display === "") {
+    caja.style.display = "block";
+  } else {
+    caja.style.display = "none";
   }
 
-  alert(texto);
 });

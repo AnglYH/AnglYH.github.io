@@ -54,12 +54,12 @@ body {
     font-style: italic;
 }
 
-.list {
+/* .list {
     display: none;
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
+} */
 
 .list li {
     background: #e8f4fc;
@@ -82,4 +82,9 @@ body {
 
 .title {
     color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+.oculto {
+    display: none;
 }
